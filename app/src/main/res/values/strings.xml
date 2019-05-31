@@ -1,0 +1,27 @@
+<resources>
+    <!--Toolbar String-->
+    <string name="app_name">MoviEncyclopedia</string>
+    <string name="app_desc">Movie &amp; TV Encyclopedia</string>
+
+
+    <!--Menu String-->
+    <string name="me_menu_movie">Movies</string>
+    <string name="me_menu_tv">TV Shows</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="release_date">Release Date</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="this_is_movie_poster">This is movie poster</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="score">Score</string>
+    <string name="ongoing_tv_shows">Ongoing TV Shows</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="top_rated_tv_shows">Top Rated TV Shows</string>
+    <string name="popular_tv_shows">Popular TV Shows</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="overview">Overview</string>
+
+</resources>

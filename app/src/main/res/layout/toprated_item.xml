@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/me_darker_orange"
+    android:layout_margin="6dp"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+            android:id="@+id/topRatedCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/score"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/me_orange"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:id="@+id/topRatedMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/me_orange"
+                android:text="@string/movie_name"/>
+
+            <com.smartfrenl.moviencyclopedia.fonts.ToolbarSubtitleTextView
+                android:id="@+id/topRatedReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/me_orange"
+                android:text="@string/release_date"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

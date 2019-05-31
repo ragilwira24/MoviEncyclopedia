@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:id="@+id/nowPlayingImageView"
+            android:contentDescription="@string/this_is_movie_poster"
+            android:background="@color/me_darker_orange"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:id="@+id/nowPlayingMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_name"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:background="@color/me_darker_orange"
+                android:textColor="@color/me_orange"/>
+
+            <com.smartfrenl.moviencyclopedia.fonts.ToolbarTitleTextView
+                android:id="@+id/nowPlayingReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/release_date"
+                android:textColor="@color/me_darker_orange"/>
+
+            <com.smartfrenl.moviencyclopedia.fonts.ToolbarSubtitleTextView
+                android:id="@+id/nowPlayingOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overview"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/me_black"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>

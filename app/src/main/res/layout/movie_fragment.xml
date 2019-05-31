@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".menu.movie.MovieFragment"
+    android:background="@color/me_darker_orange">
+
+    <LinearLayout
+        android:id="@+id/moviesContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nowPlayingSection"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:background="@color/me_orange"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/nowPlayingSectionPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:text="@string/now_playing"
+                android:textColor="@color/me_orange"
+                android:background="@color/me_darker_orange"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/nowPlayingRV"
+                android:scrollbars="horizontal"
+                android:clipToPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upcomingSection"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:background="@color/me_orange">
+
+            <RelativeLayout
+                android:id="@+id/upcomingSectionPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:text="@string/coming_soon"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/comingSoonRV"
+                android:scrollbars="horizontal"
+                android:clipToPadding="false"
+                android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topRatedSection"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/me_orange"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/topRatedSectionPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:text="@string/top_rated"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/topRatedRV"
+                android:scrollbars="vertical"
+                android:clipToPadding="false"
+                android:layout_marginBottom="6dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popularSection"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@color/me_orange"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/popularSectionPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <com.smartfrenl.moviencyclopedia.fonts.SectionTitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:text="@string/popular_movies"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/popularRV"
+                android:scrollbars="horizontal"
+                android:clipToPadding="false"
+                android:layout_marginBottom="6dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

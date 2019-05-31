@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/me_black"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <com.smartfrenl.moviencyclopedia.fonts.ToolbarTitleTextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="@color/me_orange"/>
+
+        <com.smartfrenl.moviencyclopedia.fonts.ToolbarSubtitleTextView
+            android:id="@+id/subtitleAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_desc"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/me_orange"
+            android:layout_below="@+id/appName" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitleAppName"
+            android:padding="14dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
